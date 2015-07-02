@@ -14,6 +14,7 @@
 		056D6DB01B44EE5300AB5092 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056D6DAF1B44EE5300AB5092 /* Images.xcassets */; };
 		056D6DB31B44EE5300AB5092 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056D6DB11B44EE5300AB5092 /* LaunchScreen.xib */; };
 		056D6DBF1B44EE5300AB5092 /* Color_WheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D6DBE1B44EE5300AB5092 /* Color_WheelTests.m */; };
+		056D6DCA1B44EE7100AB5092 /* GWColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D6DC91B44EE7100AB5092 /* GWColorWheel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		056D6DB81B44EE5300AB5092 /* Color WheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color WheelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		056D6DBD1B44EE5300AB5092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056D6DBE1B44EE5300AB5092 /* Color_WheelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color_WheelTests.m; sourceTree = "<group>"; };
+		056D6DC81B44EE7100AB5092 /* GWColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWColorWheel.h; sourceTree = "<group>"; };
+		056D6DC91B44EE7100AB5092 /* GWColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWColorWheel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				056D6DA71B44EE5300AB5092 /* AppDelegate.m */,
 				056D6DA91B44EE5300AB5092 /* ViewController.h */,
 				056D6DAA1B44EE5300AB5092 /* ViewController.m */,
+				056D6DC81B44EE7100AB5092 /* GWColorWheel.h */,
+				056D6DC91B44EE7100AB5092 /* GWColorWheel.m */,
 				056D6DAC1B44EE5300AB5092 /* Main.storyboard */,
 				056D6DAF1B44EE5300AB5092 /* Images.xcassets */,
 				056D6DB11B44EE5300AB5092 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				056D6DAB1B44EE5300AB5092 /* ViewController.m in Sources */,
 				056D6DA81B44EE5300AB5092 /* AppDelegate.m in Sources */,
+				056D6DCA1B44EE7100AB5092 /* GWColorWheel.m in Sources */,
 				056D6DA51B44EE5300AB5092 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,10 +16,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLy-kk-BL4" customClass="GWColorWheel">
+                                <rect key="frame" x="0.0" y="20" width="460" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZLy-kk-BL4" secondAttribute="height" multiplier="1:1" id="7LR-6t-I6J"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="S6R-im-URQ" appends="YES" id="qXH-ca-Pv3"/>
+                                    <outletCollection property="gestureRecognizers" destination="r3Z-7F-5Fp" appends="YES" id="GZh-xe-glC"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-gy-k7Z">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="995" constant="100" id="sjd-cn-O0a"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VJP-gy-k7Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8e1-Hg-MjJ"/>
+                            <constraint firstAttribute="trailing" secondItem="VJP-gy-k7Z" secondAttribute="trailing" id="AMd-Rw-JeG"/>
+                            <constraint firstItem="VJP-gy-k7Z" firstAttribute="top" secondItem="ZLy-kk-BL4" secondAttribute="bottom" constant="20" id="aMo-8U-ePi"/>
+                            <constraint firstItem="ZLy-kk-BL4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ptb-II-d0P"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLy-kk-BL4" secondAttribute="trailing" priority="990" id="u7c-bb-i9m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZLy-kk-BL4" secondAttribute="bottom" priority="900" id="w3d-JX-jLs"/>
+                            <constraint firstItem="ZLy-kk-BL4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wL9-qF-rR3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VJP-gy-k7Z" secondAttribute="bottom" id="ylW-SA-0CI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerView" destination="VJP-gy-k7Z" id="9GM-zJ-cHq"/>
+                        <outlet property="colorWheel" destination="ZLy-kk-BL4" id="RvA-K7-C8H"/>
+                        <outlet property="panGesture" destination="r3Z-7F-5Fp" id="qty-6u-xKe"/>
+                        <outlet property="tapGesture" destination="S6R-im-URQ" id="wsP-Nl-Yl0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="S6R-im-URQ">
+                    <connections>
+                        <action selector="tapGestureRecognized:" destination="BYZ-38-t0r" id="Zai-cI-dXc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="r3Z-7F-5Fp">
+                    <connections>
+                        <action selector="panGestureRecognized:" destination="BYZ-38-t0r" id="vDd-H6-NG9"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
