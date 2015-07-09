@@ -15,6 +15,7 @@
 		056D6DB31B44EE5300AB5092 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056D6DB11B44EE5300AB5092 /* LaunchScreen.xib */; };
 		056D6DBF1B44EE5300AB5092 /* Color_WheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D6DBE1B44EE5300AB5092 /* Color_WheelTests.m */; };
 		056D6DCA1B44EE7100AB5092 /* GWColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D6DC91B44EE7100AB5092 /* GWColorWheel.m */; };
+		05D62C3D1B4E1D400028C541 /* ScreenCapture.gif in Resources */ = {isa = PBXBuildFile; fileRef = 05D62C3C1B4E1D400028C541 /* ScreenCapture.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		056D6DBE1B44EE5300AB5092 /* Color_WheelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color_WheelTests.m; sourceTree = "<group>"; };
 		056D6DC81B44EE7100AB5092 /* GWColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWColorWheel.h; sourceTree = "<group>"; };
 		056D6DC91B44EE7100AB5092 /* GWColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWColorWheel.m; sourceTree = "<group>"; };
+		05D62C3C1B4E1D400028C541 /* ScreenCapture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenCapture.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				056D6DAA1B44EE5300AB5092 /* ViewController.m */,
 				056D6DC81B44EE7100AB5092 /* GWColorWheel.h */,
 				056D6DC91B44EE7100AB5092 /* GWColorWheel.m */,
+				05D62C3C1B4E1D400028C541 /* ScreenCapture.gif */,
 				056D6DAC1B44EE5300AB5092 /* Main.storyboard */,
 				056D6DAF1B44EE5300AB5092 /* Images.xcassets */,
 				056D6DB11B44EE5300AB5092 /* LaunchScreen.xib */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				056D6DAE1B44EE5300AB5092 /* Main.storyboard in Resources */,
+				05D62C3D1B4E1D400028C541 /* ScreenCapture.gif in Resources */,
 				056D6DB31B44EE5300AB5092 /* LaunchScreen.xib in Resources */,
 				056D6DB01B44EE5300AB5092 /* Images.xcassets in Resources */,
 			);
@@ -424,6 +428,7 @@
 				056D6DC41B44EE5300AB5092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		056D6DC51B44EE5300AB5092 /* Build configuration list for PBXNativeTarget "Color WheelTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +437,7 @@
 				056D6DC71B44EE5300AB5092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
